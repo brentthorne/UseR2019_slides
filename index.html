@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Transitioning between various RMarkdown packages for workflow optimization in academic research; a graduate student’s perspective.</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Brent Thorne" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/metropolis.css" rel="stylesheet" />
+    <link href="libs/remark-css/metropolis-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Transitioning between various RMarkdown packages for workflow optimization in academic research; a graduate student’s perspective.
+### Brent Thorne
+
+---
+
+
+
+
+# Hello useR! 2019
+
+.pull-left[
+&lt;img src="figures/brentphoto.jpg" width="6144" style="display: block; margin: auto;" /&gt;
+]
+.pull-right[
+**Github** - brentthorne &lt;br&gt;
+**Twitter** - brentthorne18 &lt;br&gt;
+**Email** - brentthorne18@gmail.com &lt;br&gt;
+
+**Quick Facts:**&lt;br&gt;
+- Started using R in 2014
+- Hated it!
+- Realized the value in FOSS
+- Taught myself R 
+- Made the {posterdown} package
+- Now known as the "you can do that in R!" guy in my lab!
+]
+
+---
+# Hello useR! 2019
+
+.pull-left[
+&lt;img src="figures/brentphoto.jpg" width="6144" style="display: block; margin: auto;" /&gt;
+]
+.pull-right[
+**Github** - brentthorne &lt;br&gt;
+**Twitter** - brentthorne18 &lt;br&gt;
+**Email** - brentthorne18@gmail.com &lt;br&gt;
+
+**Quick Facts:**&lt;br&gt;
+- Started using R in 2014
+- Hated it!
+- Realized the value in FOSS
+- Taught myself R 
+- Made the {posterdown} package
+- Now known as the "you can do that in R!" guy in my lab!
+]
+
+---
+# What packages can I use?
+
+| Grad Student's Needs | Possible R packages |
+|---------|:---------------------:|
+| Taking notes | [rmarkdown](https://rmarkdown.rstudio.com/)/ [pagedown](https://github.com/rstudio/pagedown) |
+| Manage Citations | [rbbt](https://github.com/paleolimbot/rbbt)/ [citr](https://github.com/crsh/citr) |
+| Conference Posters | [pagedown](https://github.com/rstudio/pagedown)/ [posterdown](https://github.com/brentthorne/posterdown) (_personal bias on this one_) |
+| Thesis/ Dissertation  | [bookdown](https://github.com/rstudio/bookdown)/ [thesisdown](https://github.com/ismayc/thesisdown)/ [pagedown::thesis_paged](https://github.com/rstudio/pagedown#thesis-pagedownthesis_paged) |
+| Slide Shows | [xaringan](https://github.com/yihui/xaringan)/ [beamer](https://bookdown.org/yihui/rmarkdown/beamer-presentation.html) |
+| Make a CV | rmarkdown/ [pagedown](https://github.com/rstudio/pagedown#resume-pagedownhtml_resume) |
+| Manuscripts | [rticles](https://github.com/rstudio/rticles)/ [pagedown](https://github.com/rstudio/pagedown#journal-of-statistical-software-article-pagedownjss_paged) |
+
+---
+# What packages can I use?
+
+| Grad Student's Needs | Possible R packages |
+|---------|:---------------------:|
+| Taking notes | [rmarkdown](https://rmarkdown.rstudio.com/)/ [pagedown](https://github.com/rstudio/pagedown) |
+| Manage Citations | [rbbt](https://github.com/paleolimbot/rbbt)/ [citr](https://github.com/crsh/citr) |
+| Conference Posters | [pagedown](https://github.com/rstudio/pagedown)/ [posterdown](https://github.com/brentthorne/posterdown) (_personal bias on this one_) |
+| Thesis/ Dissertation  | [bookdown](https://github.com/rstudio/bookdown)/ [thesisdown](https://github.com/ismayc/thesisdown)/ [pagedown::thesis_paged](https://github.com/rstudio/pagedown#thesis-pagedownthesis_paged) |
+| Slide Shows | [xaringan](https://github.com/yihui/xaringan)/ [beamer](https://bookdown.org/yihui/rmarkdown/beamer-presentation.html) |
+| Make a CV | rmarkdown/ [pagedown](https://github.com/rstudio/pagedown#resume-pagedownhtml_resume) |
+| Manuscripts | [rticles](https://github.com/rstudio/rticles)/ [pagedown](https://github.com/rstudio/pagedown#journal-of-statistical-software-article-pagedownjss_paged) |
+
+---
+# New User's 
+
+&lt;img src="figures/user.jpg" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+# New User's 
+.pull-left[
+&lt;br&gt;
+&lt;br&gt;
+
+- Show them, don't tell them
+
+- Show them only 1 item at a time
+
+- Ask them if they want help getting started
+]
+
+.pull-right[
+&lt;img src="figures/user.jpg" width="100%" style="display: block; margin: auto;" /&gt;
+]
+---
+# LaTeX or HTML?
+
+&lt;img src="figures/Two-Buttons.svg" width="45%" style="display: block; margin: auto;" /&gt;
+
+---
+# LaTeX or HTML?
+.pull-left[
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+- Can be difficult to transition between the two.
+
+&lt;br&gt;
+- Often a person sticks with what they started with.
+]
+
+.pull-right[
+&lt;img src="figures/Two-Buttons.svg" width="80%" style="display: block; margin: auto;" /&gt;
+]
+---
+# Can we simplify syntax?
+
+&lt;img src="figures/itworksitdoesnt.png" width="65%" style="display: block; margin: auto;" /&gt;
+
+---
+# Can we simplify syntax?
+.pull-left[
+&lt;br&gt;
+&lt;br&gt;
+
+- New user's are put off when needing to change what they know for little gain.
+
+&lt;br&gt;
+
+- I made `posterdown` to ensure a document written in `rmarkdown` could be immediately turned into a conference poster.
+
+]
+.pull-right[
+&lt;img src="figures/itworksitdoesnt.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+---
+# Why should supervisors care?
+
+&lt;br&gt;
+
+1) Version control&lt;br&gt;
+
+2) Reproducible
+
+3) More time for the important stuff, think of all the manuscripts!
+
+4) Check up on progress from a distance....
+
+&lt;img src="figures/githubcont.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+5) No need to track down a student years after they're gone for data/ analysis.
+
+---
+# Why should supervisors care?
+
+&lt;br&gt;
+
+1) Version control&lt;br&gt;
+
+2) Reproducible
+
+3) More time for the important stuff, think of all the manuscripts!
+
+4) Check up on progress from a distance....
+
+&lt;img src="figures/githubcont.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+5) No need to track down a student years after they're gone for data/ analysis.
+
+---
+# Conclusion
+
+- R markdown and other down packages are changing the way academia can become more streamlined for graduate students
+
+- When creating new packages/ templates for the downverse it will be important to consider how a template may be transitioned to or from by simplifying the syntax.
+
+- Let's encourage all levels of academia to embrace reproducible research!
+
+---
+# Thank you
+
+Thank you to useR! 2019 for providing a scholarship for me to attend this years meeting!
+
+&lt;br&gt;
+
+&lt;img src="figures/user2019.jpg" width="40%" style="display: block; margin: auto;" /&gt;
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

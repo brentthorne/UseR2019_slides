@@ -1,4 +1,5 @@
-# UseR2019_slides
+# UseR! 2019 Lightning Talk
+
 Here are the slides used for my lightning talk at the UseR! 2019 conference in Toulouse.
 
 Please see https://brentthorne.github.io/UseR2019_slides/#1 for a live version of the slides. There will also (soon hopefully) be a video of the talk posted on the [R Consortium YouTube Channel](https://www.youtube.com/channel/UC_R5smHVXRYGhZYDJsnXTwg) and I suggest waiting for the talk to be released before really looking too much at these slides which were not meant to be used individually from the actual talk I gave :smile:! 
